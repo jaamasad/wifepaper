@@ -147,12 +147,14 @@
   background-color: #abcfe8;
   position: relative;
   padding: 64px;
+  display: flex;
+  align-items: center;
   padding-bottom: 12px;
 }
 .info3-icon {
   color: #4c4646;
   position: absolute;
-  left: 20px;
+  left: 50px;
   top: 20px;
 }
 .info3-icon img {
@@ -230,7 +232,7 @@
   text-align: center;
 }
 .info-4-arrow {
-  width: 150px;
+  width: 110px;
 }
 .info-4-arrow img {
   width: 100%;
@@ -248,6 +250,53 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.info-01 {
+  position: relative;
+}
+.point-arrow {
+  position: absolute;
+  z-index: 1;
+  width: 35px;
+  height: 230px;
+  border: solid #2a3f91 6px;
+  background: none;
+  border-left: none;
+  border-radius: 0px 24px 24px 0px;
+}
+.point-arrow::after {
+  content: "<";
+  position: absolute;
+  font-size: 64px;
+  left: -12px;
+  color: #2a3f91;
+  bottom: -36px;
+}
+.info-02 .point-arrow::after {
+  top: -42px;
+}
+.point-arrow::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #2a3f91;
+  position: absolute;
+  border-radius: 50%;
+  top: -10px;
+  left: -12px;
+}
+.info-02 .point-arrow::before {
+  top: 212px;
+}
+.info-03 .point-arrow,
+.info-11 .point-arrow {
+  right: 16px;
+  bottom: -20%;
+}
+.info-02 .point-arrow {
+  transform: rotate(180deg);
+  top: 72%;
+} 
+
 @media screen and (max-width: 768px) {
   .info-03,
   .info-02,
@@ -274,6 +323,9 @@
     position: static;
     max-width: 100px;
     margin: auto;
+  }
+  .info-03 .point-arrow {
+    bottom: -13%;
   }
   
 }
@@ -315,5 +367,7 @@
   .info-4-circle{
     margin-top: -8px;
   }
-
+  .point-arrow {
+    display: none ;
+  }
 }

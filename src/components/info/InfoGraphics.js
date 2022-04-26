@@ -1,11 +1,14 @@
 import React from "react"
 import "./infographics.css"
+import {ArrowCurveUpLeft} from "@styled-icons/fluentui-system-regular/ArrowCurveUpLeft"
+import {ArrowCurveUpRight} from "@styled-icons/fluentui-system-filled/ArrowCurveUpRight"
 const InfoGraphics = () => {
   return (
     <div className="infographics" id="roadmap">
       <h2 className="info-title">multichain breeding</h2>
 
       <div className="info-01 info-11">
+        <div className="point-arrow" />
         <div className="info-1-left">
           <div className="info-1-left-1">
             <img src="/assets/images/harmony.png" alt="" />
@@ -35,6 +38,7 @@ const InfoGraphics = () => {
       </div>
 
       <div className="info-01 info-02">
+      <div className="point-arrow" />
         <div className="info-1-left">
           <div className="info-1-left-1">
             <img src="/assets/images/avax.png" alt="" />
@@ -67,6 +71,7 @@ const InfoGraphics = () => {
       </div>
 
       <div className="info-01 info-03">
+      <div className="point-arrow" />
         <div className="info3-icon">
           <img src="/assets/images/info-3-icon.png" alt="" />
         </div>

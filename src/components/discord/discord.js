@@ -22,7 +22,7 @@ const DiscordComponent = (props) => {
             announcment
           </p>
         </div>
-        <button className="button">Join our discord</button>
+        <a href="https://twitter.com/TradWifeNFT" target="__blank"><button className="button"> Join our discord</button></a>
       </div>
     </Slide>
   )
