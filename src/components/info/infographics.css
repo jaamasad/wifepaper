@@ -1,0 +1,252 @@
+.infographics {
+  width: 100%;
+  margin: auto;
+  max-width: 850px;
+  margin-top: 64px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.infographics > * {
+  box-sizing: border-box;
+}
+
+.infographics img {
+  width: 100%;
+}
+
+.info-title {
+  background-image: linear-gradient(to right, #116f92, #44b9b8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-bottom: 8px;
+}
+
+.info-01 {
+  width: 100%;
+  display: flex;
+  background: #dbeaf5;
+  padding: 16px;
+}
+
+.info-1-left {
+  width: 40%;
+  position: relative;
+}
+
+.info-1-left-1 {
+  width: 100%;
+  max-width: 90px;
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-1-left-2 {
+  width: 100%;
+  max-width: 110px;
+  position: absolute;
+  bottom: 15%;
+  right: 32px;
+}
+
+.info-1-left-2 img {
+  border-radius: 50%;
+}
+
+.info-1-left-2 span {
+  color: #99669a;
+  display: block;
+  margin: auto;
+  margin-top: 8px;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.info-1-right {
+  width: 60%;
+}
+
+.info-1-right ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-1-right ul li {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.info-1-right ul li::before {
+  content: " ";
+  min-width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #19afe6;
+  margin-right: 20px;
+  display: block;
+}
+
+.info-1-right ul li:nth-child(2):before {
+  background: #30c1da;
+}
+
+.info-02 .info-1-right ul li:nth-child(2):before,
+.info-1-right ul li:nth-child(3):before {
+  background: #86cdae;
+}
+
+.info-1-right ul li img {
+  width: 100%;
+  max-width: 80px;
+  border-radius: 50%;
+  margin-right: 32px;
+}
+
+.info-1-right ul li span {
+}
+
+.info-02 {
+  background: #c3dcee;
+}
+
+.info-02 .info-1-left-2 span {
+  color: #e94242;
+}
+
+.matchmaker::before {
+  content: none !important;
+}
+
+.info-1-right ul li.matchmaker {
+  margin-left: 32px;
+  width: 85%;
+  background: #d8c1cb;
+  border-radius: 16px;
+  padding: 16px 8px;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+.infographics strong {
+  font-weight: 900;
+}
+.info-03 {
+  background-color: #abcfe8;
+  position: relative;
+  padding: 64px;
+  padding-bottom: 12px;
+}
+.info3-icon {
+  color: #4c4646;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.info3-icon img {
+  width: 100%;
+}
+.icon-info-03,
+.info-03-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-03-l-uper {
+  display: flex;
+  align-items: center;
+}
+.text-img {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.text-img img {
+  width: 70px;
+  padding-right: 16px;
+}
+.point-img {
+  width: 90px !important;
+}
+.info-03-left {
+  width: 70%;
+}
+.info-03-right {
+  width: 30%;
+}
+.info-03-l-uper:first-child {
+  position: relative;
+}
+.info-03-l-uper:first-child::after {
+  content: "";
+  position: absolute;
+  width: 74%;
+  border-bottom: dashed gray;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
+}
+.info-03-right ul {
+  background-color: #84b8dd;
+  padding: 32px;
+  border-radius: 20px;
+}
+.info-03-right ul li {
+  list-style: disc;
+}
+.info-04 {
+  background-color: #87badd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 800;
+  color: #2a3f91;
+  text-transform: uppercase;
+}
+.info-4-circle {
+  width: 84px;
+  height: 84px;
+  background: #2a3f91;
+  border-radius: 50%;
+  border: solid #18afe6 32px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  position: relative;
+}
+.info-4-point p {
+  text-align: center;
+}
+.info-4-arrow {
+  width: 150px;
+}
+.info-4-arrow img {
+  width: 100%;
+}
+.info-04>div {
+  margin: 12px;
+}
+.info-4-circle::before {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 2px;
+  background-color: #2a3f91;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

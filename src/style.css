@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+  }
+  .acquire-flex{
+      display: flex;
+      flex-direction: column;
+  }
+  .btn-d-flex{
+      display: flex;
+      flex-direction: column;
+      /* Delete these two margins later*/
+      margin-right: 10px;
+      margin-top: 20px;
+  }
+  .mint-btn{
+      margin-top: 20px;
+      background-color: #00CC00 !important;
+      color: #fff !important;
+  }
+  .mint-btn:active{
+      background-color: #FF19E9 !important;
+      color: #fff !important;
+  }
+  select {
+    position: relative;
+    max-width: 200px;
+  }
+  select {
+    -webkit-appearance: none;
+    padding:10px 10px 10px 12px;
+    border: 1px solid #e8eaed;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 11px;
+    transition: all 150ms ease;
+  }
+  label{
+      font-size: 10px !important;
+      color: #fff;      
+  }
+  label.select {
+    margin-bottom: 10px;
+}
+select:required:invalid {
+    color: #5a667f;
+  }
+select option {
+    color: #223254;
+  }
+ select option[value=""][disabled] {
+    display: none;
+  }
+  select:focus {
+    outline: none;
+    border-color: #07f;
+    box-shadow: 0 0 0 2px rgba(0,119,255,0.2);
+  }
