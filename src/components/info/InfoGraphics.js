@@ -2,7 +2,7 @@ import React from "react"
 import "./infographics.css"
 const InfoGraphics = () => {
   return (
-    <div className="infographics">
+    <div className="infographics" id="roadmap">
       <h2 className="info-title">multichain breeding</h2>
 
       <div className="info-01 info-11">

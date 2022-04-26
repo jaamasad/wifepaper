@@ -13,6 +13,8 @@ import HolderBenefits from "./components/holdersBenefit/holderBenefits"
 import InfoGraphics from "./components/info/InfoGraphics"
 import Faq from "./components/Faq/Faq"
 import Footer from "./components/Footer/Footer"
+import ScrollToTop from "react-scroll-to-top";
+
 import "./style.css"
 
 export const StyledButton = styled.button`
@@ -113,6 +115,7 @@ function Dapp() {
   return (
     <s.Screen>
       <Header />
+      <ScrollToTop smooth color="#6f00ff" />
       <s.Container flex={1} ai={"center"}>
         <div className="hero-container">
         <Slide bottom>

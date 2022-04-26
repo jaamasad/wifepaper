@@ -81,7 +81,7 @@ const Faq = (props) => {
     items.forEach((item) => item.addEventListener("click", toggleAccordion))
   }, [])
   return (
-    <div className="FaqContainer">
+    <div className="FaqContainer" id="faqs">
       <Slide bottom>
         {/* <div className="faqs-container">
           <div className="faq">
