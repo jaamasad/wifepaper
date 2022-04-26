@@ -1,17 +1,19 @@
-import React from "react";
-import "./discord.css";
-import DiscordImg from "../../assets/images/site/discord.png";
-import Slide from "react-reveal/Slide";
+import React from "react"
+import "./discord.css"
+import { Discord } from "@styled-icons/simple-icons/Discord"
+import Slide from "react-reveal/Slide"
 /**
  * @author
  * @function Discord
  **/
 
-const Discord = (props) => {
+const DiscordComponent = (props) => {
   return (
     <Slide bottom>
       <div className="banner" id="discord">
-        <img src={DiscordImg} className="discordImg" />
+        <a href="" className="discordImg">
+          <Discord />
+        </a>
 
         <div className="middle">
           <h1 className="middle-h">Join the community</h1>
@@ -23,7 +25,7 @@ const Discord = (props) => {
         <button className="button">Join our discord</button>
       </div>
     </Slide>
-  );
-};
+  )
+}
 
-export default Discord;
+export default DiscordComponent

@@ -12,8 +12,8 @@ const HolderBenefits = (props) => {
       <div className="holderBenefitsHeader">Holder Benefits</div>
       <Slide bottom>
         <div className="primaryBenifits">
-          <div className="primaryBenifitsHeader">PRIMARY BENIFITS</div>
           <div className="primaryBenifitsInnerContainer">
+          <div className="primaryBenifitsHeader">PRIMARY BENIFITS</div>
             <div
               className="primaryBenifitsInnerContent"
               style={{ marginTop: "40px" }}

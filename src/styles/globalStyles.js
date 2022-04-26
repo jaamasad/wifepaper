@@ -2,14 +2,17 @@ import styled from "styled-components";
 
 // Used for wrapping a page component
 export const Screen = styled.div`
-  background-color: var(--dark-grey);
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
-  width: 100%;
+  max-width: 90%;
+  margin:auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  @media (min-width: 992px) {
+    max-width: 768px
+  }
 `;
 
 // Used for providing space between components

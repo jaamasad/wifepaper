@@ -5,7 +5,7 @@ const InfoGraphics = () => {
     <div className="infographics">
       <h2 className="info-title">multichain breeding</h2>
 
-      <div className="info-01">
+      <div className="info-01 info-11">
         <div className="info-1-left">
           <div className="info-1-left-1">
             <img src="/assets/images/harmony.png" alt="" />
@@ -24,7 +24,7 @@ const InfoGraphics = () => {
             </li>
             <li>
               <img src="/assets/images/morsel.png" alt="" />
-              <span>MORSEL Staking Rewards - Earn fees from Harmony dApps</span>
+              <span>MORSEL Staking Rewards -  NIBBLE earns fees from AVAX dApps</span>
             </li>
             <li>
               <img src="/assets/images/dollar-2.png" alt="" />
@@ -53,7 +53,7 @@ const InfoGraphics = () => {
             </li>
             <li>
               <img src="/assets/images/dollar.png" alt="" />
-              <span>NIBBLE Staking Rewards - Earn fees from Harmony dApps</span>
+              <span>NIBBLE Staking Rewards -  NIBBLE earns fees from AVAX dApps</span>
             </li>
             <li className="matchmaker">
               <p>

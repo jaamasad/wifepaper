@@ -1,13 +1,13 @@
-import React from "react";
-import "./faq.css";
-import Slide from "react-reveal/Slide";
+import React, { useEffect } from "react"
+import "./faq.css"
+import Slide from "react-reveal/Slide"
 import { DownArrow } from "@styled-icons/boxicons-solid/DownArrow"
 
 /**
  * @author
  * @function Faq
  **/
- const FAQ = [
+const FAQ = [
   {
     heading: "What is Morsel Protocol?",
     text: "Morsel Protocol is a set of products that are designed to lock liquidity into Harmony ONE projects. These products enable signaling of support to neighboring projects and their investors. OneBite is an index fund that can be held in project treasuries to gain diversified exposure to Harmony ONE protocols while signaling that they support the ecosystem. Wifely Internet Money (WIM), a stablecoin that is collateralized by OneBite, can similarly be used in Liquidity Pairs to signal the same support.",
@@ -63,11 +63,27 @@ import { DownArrow } from "@styled-icons/boxicons-solid/DownArrow"
 ]
 
 const Faq = (props) => {
+  useEffect(() => {
+    const items = document.querySelectorAll(".accordion button")
+
+    function toggleAccordion() {
+      const itemToggle = this.getAttribute("aria-expanded")
+
+      for (let i = 0; i < items.length; i++) {
+        items[i].setAttribute("aria-expanded", "false")
+      }
+
+      if (itemToggle == "false") {
+        this.setAttribute("aria-expanded", "true")
+      }
+    }
+
+    items.forEach((item) => item.addEventListener("click", toggleAccordion))
+  }, [])
   return (
     <div className="FaqContainer">
       <Slide bottom>
-      <div className="faqs-container">
-      <div className="holderBenefitsHeader">FAQ</div>
+        {/* <div className="faqs-container">
           <div className="faq">
             {FAQ.map((item, key) => {
               return (
@@ -86,10 +102,55 @@ const Faq = (props) => {
               )
             })}
           </div>
+        </div> */}
+        {/* <div className="faq-container">
+          <div className="holderBenefitsHeader">FAQ</div>
+          <div className="accordion">
+            {FAQ.map((item, key) => (
+              <div className="accordion-item" key={key}>
+                <button id={`accordion-button-${key}`} aria-expanded="false">
+                  <span className="accordion-title">
+                    {item.heading}
+                  </span>
+                  <span className="icon" aria-hidden="true"></span>
+                </button>
+                <div className="accordion-content">
+                <p className="faq-text" dangerouslySetInnerHTML={{__html: item.text}} />
+                </div>
+              </div>
+            ))}
+            
+          </div>
+        </div> */}
+        <div className="holderBenefitsHeader">FAQ</div>
+
+        <br />
+
+        <div class="content">
+          {FAQ.map((item, key) => {
+            return (
+              <div key={key}>
+                <input
+                  type="checkbox"
+                  id={`question${key}`}
+                  name="q"
+                  class="questions"
+                />
+                <div class="plus">+</div>
+                <label for={`question${key}`} class="question">
+                {item.heading}
+                </label>
+                <div class="answers"
+                dangerouslySetInnerHTML={{__html: item.text}}
+                 />
+                
+              </div>
+            )
+          })}
         </div>
       </Slide>
     </div>
-  );
-};
+  )
+}
 
-export default Faq;
+export default Faq
