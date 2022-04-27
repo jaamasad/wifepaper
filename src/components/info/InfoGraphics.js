@@ -53,11 +53,11 @@ const InfoGraphics = () => {
           <ul>
             <li>
               <img src="/assets/images/nibbles.png" alt="" />
-              <span>Royalties</span>
+              <span>NIBBLE Staking Rewards - Earn fees from AVAX dApps</span>
             </li>
             <li>
-              <img src="/assets/images/dollar.png" alt="" />
-              <span>NIBBLE Staking Rewards -  NIBBLE earns fees from AVAX dApps</span>
+            <img src="/assets/images/dollar-2.png" alt="" />
+              <span>Dividends</span>
             </li>
             <li className="matchmaker">
               <p>
