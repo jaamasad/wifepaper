@@ -10,7 +10,7 @@ import Slide from "react-reveal/Slide";
 
 const Header = (props) => {
   return (
-    <div>
+    <div className="header">
       <Logos />
       <Slide top>
         <Navbar />

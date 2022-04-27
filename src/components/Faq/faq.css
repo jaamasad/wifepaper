@@ -1,114 +1,96 @@
 .FaqContainer {
-  display: flex;
-  width: 830px;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-}
-.FaqContainer .react-reveal {
   width: 100%;
-}
-
-@media only screen and (max-width: 400px) {
-  .FaqContainer {
-    flex-direction: column;
-  }
-}
-
-.faq-heading {
-  font-weight: 600;
-  font-size: 20px;
-  padding: 14px 0;
-  line-height: 17px;
-  font-family: "Epilogue SemiBold";
-}
-
-.faq-text {
-  font-weight: 400;
-  margin-bottom: 30px;
-  line-height: 20px;
-  font-size: 16px;
-  position: absolute;
-  color: black;
-}
-.faq-text strong {
-  font-weight: bold;
-}
-.faq {
-  margin: 0 auto;
-  border-radius: 4px;
-  position: relative;
-  background-color: #abcfe8;
-  text-align: left;
-  /* text-transform: capitalize; */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding: 15px;
-  margin-top: 20px;
 }
 .FaqContainer .holderBenefitsHeader {
-  color: white;
-  width: 100% !important;
+  width: 100%;
 }
-.faq label {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  padding-top: 1px;
-  border-top: 1px solid #e1e1e1;
-  -webkit-tap-highlight-color: transparent;
+.content {
+  width: 80%;
+  padding: 0;
+  margin: 0 auto;
 }
 
-.faq input[type="checkbox"] {
-  display: none;
+.centerplease {
+  margin: 0 auto;
+  max-width: 270px;
+  font-size: 40px;
 }
-.question-arrow {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
+
+/*Question*/
+.question {
+  position: relative;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  width:100%;
+  cursor: pointer;
+  font-size: 16px !important;
   color: black;
 }
-
-.down-arrow svg {
-  width: 18px;
-  height: 18px;
-}
-
-.faq input[type="checkbox"]:checked + label {
-  display: block;
-  height: fit-content;
-  transition: height 0.8s;
-}
-
-.faq input[type="checkbox"]:not(:checked) + label {
-  display: block;
-  transition: height 0.8s;
-  height: fit-content;
+/*Answer*/
+.answers {
+  padding: 0px 15px;
+  margin: 5px 0;
+  width:100%!important;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
   position: relative;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
 }
 
-.faq input[type="checkbox"]:checked + label .faq-text {
-  position: relative !important;
-  transform: translateY(0);
-    transition: transform 2s;
+.questions:checked ~ .answers{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+  
 }
-.faq-text img {
+
+/*FAQ Toggle*/
+.plus {
+  position: absolute;
+  margin-left: 10px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.questions {
+  display: none;
+  
+}
+.answers img {
   width: 100%;
 }
-.faq-text ul li {
+.answers strong {
+  font-weight: bold;
+}
+.answers ul li {
   list-style: inside;
 }
-@media screen and (max-width: 768px) {
-  .faq-line {
-    background-size: cover;
-    border-radius: 10px;
-    padding: 0 22px;
-    margin: 16px 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .faq {
-    width: 100%;
-  }
-}
+
+
+

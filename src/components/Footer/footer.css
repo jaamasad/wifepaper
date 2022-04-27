@@ -1,0 +1,9 @@
+.social-link {
+  display: flex;
+  margin-bottom: 50px;
+}
+.social-link a svg {
+  width: 30px !important;
+  margin: 14px;
+  color: #192b45;
+}
